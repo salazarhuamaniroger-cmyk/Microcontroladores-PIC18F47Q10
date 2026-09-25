@@ -1,0 +1,378 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/maincode.o
+upcino CODE 0 0 0 24C 1 2
+config CONFIG 4 300000 300000 A 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-24FF 1
+SFR 24C-4FF 1
+SFR 2500-25FF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 24C-1FFFF 1
+IDLOC 200000-20003F 1
+SMALLCONST 2600-FFFF 1
+SMALLCONST 12600-1FFFF 1
+CODE 24C-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BIGRAM 500-24FF 1
+BIGSFR 24C-4FF 1
+BIGSFR 2500-25FF 1
+COMRAM 500-55F 1
+CONFIG 30000A-300011 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 2600-FFFF 1
+MEDIUMCONST 12600-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/maincode.o
+0 upcino CODE >11:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+100 upcino CODE >19:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+102 upcino CODE >20:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+104 upcino CODE >21:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+106 upcino CODE >22:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+108 upcino CODE >23:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+10A upcino CODE >24:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+10C upcino CODE >25:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+10E upcino CODE >29:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+110 upcino CODE >33:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+112 upcino CODE >34:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+114 upcino CODE >36:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+116 upcino CODE >37:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+118 upcino CODE >39:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+11A upcino CODE >40:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+11C upcino CODE >42:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+11E upcino CODE >43:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+120 upcino CODE >45:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+122 upcino CODE >46:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+124 upcino CODE >48:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+126 upcino CODE >49:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+128 upcino CODE >51:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+12A upcino CODE >52:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+12C upcino CODE >60:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+12E upcino CODE >61:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+130 upcino CODE >62:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+132 upcino CODE >69:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+136 upcino CODE >71:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+138 upcino CODE >72:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+13A upcino CODE >74:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+13C upcino CODE >75:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+13E upcino CODE >78:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+142 upcino CODE >80:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+144 upcino CODE >81:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+146 upcino CODE >83:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+148 upcino CODE >84:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+14A upcino CODE >87:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+14E upcino CODE >89:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+150 upcino CODE >90:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+152 upcino CODE >92:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+154 upcino CODE >93:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+156 upcino CODE >96:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+15A upcino CODE >98:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+15C upcino CODE >99:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+15E upcino CODE >101:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+160 upcino CODE >102:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+162 upcino CODE >105:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+166 upcino CODE >107:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+168 upcino CODE >108:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+16A upcino CODE >110:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+16C upcino CODE >111:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+16E upcino CODE >114:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+172 upcino CODE >116:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+174 upcino CODE >117:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+176 upcino CODE >119:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+178 upcino CODE >120:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+17A upcino CODE >123:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+17E upcino CODE >125:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+180 upcino CODE >126:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+182 upcino CODE >128:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+184 upcino CODE >129:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+186 upcino CODE >132:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+18A upcino CODE >134:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+18C upcino CODE >135:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+18E upcino CODE >137:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+190 upcino CODE >138:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+192 upcino CODE >141:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+196 upcino CODE >143:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+198 upcino CODE >144:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+19A upcino CODE >146:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+19C upcino CODE >147:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+19E upcino CODE >150:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1A2 upcino CODE >152:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1A4 upcino CODE >153:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1A6 upcino CODE >155:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1A8 upcino CODE >156:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1AA upcino CODE >158:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1AC upcino CODE >169:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1AE upcino CODE >170:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1B0 upcino CODE >171:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1B2 upcino CODE >172:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1B4 upcino CODE >173:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1B6 upcino CODE >174:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1B8 upcino CODE >175:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1BA upcino CODE >176:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1BC upcino CODE >179:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1BE upcino CODE >180:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1C0 upcino CODE >181:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1C2 upcino CODE >182:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1C4 upcino CODE >183:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1C6 upcino CODE >184:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1C8 upcino CODE >185:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1CA upcino CODE >186:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1CC upcino CODE >191:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1CE upcino CODE >192:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1D0 upcino CODE >193:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1D2 upcino CODE >194:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1D4 upcino CODE >195:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1D6 upcino CODE >196:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1D8 upcino CODE >197:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1DA upcino CODE >198:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1DC upcino CODE >200:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1DE upcino CODE >201:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1E0 upcino CODE >202:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1E2 upcino CODE >203:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1E4 upcino CODE >204:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1E6 upcino CODE >205:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1E8 upcino CODE >206:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1EA upcino CODE >207:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1EC upcino CODE >209:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1EE upcino CODE >210:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1F0 upcino CODE >211:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1F2 upcino CODE >212:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1F4 upcino CODE >213:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1F6 upcino CODE >214:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1F8 upcino CODE >215:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1FA upcino CODE >216:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1FC upcino CODE >219:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+1FE upcino CODE >220:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+200 upcino CODE >221:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+202 upcino CODE >222:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+204 upcino CODE >223:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+206 upcino CODE >224:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+208 upcino CODE >225:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+20A upcino CODE >226:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+20C upcino CODE >229:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+20E upcino CODE >230:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+210 upcino CODE >231:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+212 upcino CODE >232:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+214 upcino CODE >233:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+216 upcino CODE >234:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+218 upcino CODE >235:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+21A upcino CODE >236:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+21C upcino CODE >239:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+21E upcino CODE >240:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+220 upcino CODE >241:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+222 upcino CODE >242:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+224 upcino CODE >243:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+226 upcino CODE >244:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+228 upcino CODE >245:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+22A upcino CODE >246:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+22C upcino CODE >249:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+22E upcino CODE >250:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+230 upcino CODE >251:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+232 upcino CODE >252:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+234 upcino CODE >253:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+236 upcino CODE >254:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+238 upcino CODE >255:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+23A upcino CODE >256:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+23C upcino CODE >259:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+23E upcino CODE >260:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+240 upcino CODE >261:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+242 upcino CODE >262:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+244 upcino CODE >263:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+246 upcino CODE >264:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+248 upcino CODE >265:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+24A upcino CODE >266:D:\CURSOS MECA\Ciclo_5\practicas_autonomas\Display-7-segments.X\maincode.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 24C 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000A 0 ABS 0 - -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank13 0 0 ABS 0 udata_bank13 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+__Hudata_bank15 0 0 ABS 0 udata_bank15 -
+__Hudata_bank16 0 0 ABS 0 udata_bank16 -
+__Hudata_bank17 0 0 ABS 0 udata_bank17 -
+__Hudata_bank18 0 0 ABS 0 udata_bank18 -
+__Hudata_bank19 0 0 ABS 0 udata_bank19 -
+__Hudata_bank20 0 0 ABS 0 udata_bank20 -
+__Hudata_bank21 0 0 ABS 0 udata_bank21 -
+__Hudata_bank22 0 0 ABS 0 udata_bank22 -
+__Hudata_bank23 0 0 ABS 0 udata_bank23 -
+__Hudata_bank24 0 0 ABS 0 udata_bank24 -
+__Hudata_bank25 0 0 ABS 0 udata_bank25 -
+__Hudata_bank26 0 0 ABS 0 udata_bank26 -
+__Hudata_bank27 0 0 ABS 0 udata_bank27 -
+__Hudata_bank28 0 0 ABS 0 udata_bank28 -
+__Hudata_bank29 0 0 ABS 0 udata_bank29 -
+__Hudata_bank30 0 0 ABS 0 udata_bank30 -
+__Hudata_bank31 0 0 ABS 0 udata_bank31 -
+__Hudata_bank32 0 0 ABS 0 udata_bank32 -
+__Hudata_bank33 0 0 ABS 0 udata_bank33 -
+__Hudata_bank34 0 0 ABS 0 udata_bank34 -
+__Hudata_bank35 0 0 ABS 0 udata_bank35 -
+__Hudata_bank36 0 0 ABS 0 udata_bank36 -
+isa$xinst 0 0 ABS 0 - build/default/debug/maincode.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000A 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank13 0 0 ABS 0 udata_bank13 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Ludata_bank15 0 0 ABS 0 udata_bank15 -
+__Ludata_bank16 0 0 ABS 0 udata_bank16 -
+__Ludata_bank17 0 0 ABS 0 udata_bank17 -
+__Ludata_bank18 0 0 ABS 0 udata_bank18 -
+__Ludata_bank19 0 0 ABS 0 udata_bank19 -
+__Ludata_bank20 0 0 ABS 0 udata_bank20 -
+__Ludata_bank21 0 0 ABS 0 udata_bank21 -
+__Ludata_bank22 0 0 ABS 0 udata_bank22 -
+__Ludata_bank23 0 0 ABS 0 udata_bank23 -
+__Ludata_bank24 0 0 ABS 0 udata_bank24 -
+__Ludata_bank25 0 0 ABS 0 udata_bank25 -
+__Ludata_bank26 0 0 ABS 0 udata_bank26 -
+__Ludata_bank27 0 0 ABS 0 udata_bank27 -
+__Ludata_bank28 0 0 ABS 0 udata_bank28 -
+__Ludata_bank29 0 0 ABS 0 udata_bank29 -
+__Ludata_bank30 0 0 ABS 0 udata_bank30 -
+__Ludata_bank31 0 0 ABS 0 udata_bank31 -
+__Ludata_bank32 0 0 ABS 0 udata_bank32 -
+__Ludata_bank33 0 0 ABS 0 udata_bank33 -
+__Ludata_bank34 0 0 ABS 0 udata_bank34 -
+__Ludata_bank35 0 0 ABS 0 udata_bank35 -
+__Ludata_bank36 0 0 ABS 0 udata_bank36 -
+__Hupcino 0 0 ABS 0 upcino -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/debug/maincode.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lupcino 0 0 ABS 0 upcino -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

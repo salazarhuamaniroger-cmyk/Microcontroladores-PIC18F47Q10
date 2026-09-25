@@ -6,5 +6,5 @@
 CND_BASEDIR=`pwd`
 # default configuration
 CND_ARTIFACT_DIR_default=dist/default/production
-CND_ARTIFACT_NAME_default=contador_0-9_.X.production.null
-CND_ARTIFACT_PATH_default=dist/default/production/contador_0-9_.X.production.null
+CND_ARTIFACT_NAME_default=contador_0-9_.X.production.hex
+CND_ARTIFACT_PATH_default=dist/default/production/contador_0-9_.X.production.hex
