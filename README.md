@@ -1,4 +1,4 @@
-# Documentación: Práctica de la Semana 2
+# Documentación: Práctica de la Semana_2.zip
 
 ## Resumen del Proyecto
 El archivo **`semana_2.ZIP`** contiene todos los recursos necesarios para el proyecto de la implementación de tres compuertas lógicas NOT.
