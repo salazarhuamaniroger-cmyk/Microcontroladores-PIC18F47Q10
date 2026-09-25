@@ -79,46 +79,13 @@ configuro:
     movwf TBLPTRH, 1
 
 loop:
-    /*
-    ; >>> SECCIÓN AÑADIDA: Bucle principal de multiplexación <<<
-    ; Reiniciar puntero L para el barrido en cada ciclo
-    movlw 50H
-    movwf TBLPTRL, 1
-
-    ; --- Letra 'P' ---
-    TBLRD*+               ; Lee 0x150
-    movff TABLAT, LATC
-    bsf LATD, 0, 1        ; Enciende RD0
-    call nopes
-    bcf LATD, 0, 1        ; Apaga RD0
-
-    ; --- Letra 'e' ---
-    TBLRD*+               ; Lee 0x151
-    movff TABLAT, LATC
-    bsf LATD, 1, 1        ; Enciende RD1
-    call nopes
-    bcf LATD, 1, 1        ; Apaga RD1
-
-    ; --- Letra 'r' ---
-    TBLRD*+               ; Lee 0x152
-    movff TABLAT, LATC
-    bsf LATD, 2, 1        ; Enciende RD2
-    call nopes
-    bcf LATD, 2, 1        ; Apaga RD2
-
-    ; --- Letra 'U' ---
-    TBLRD*+               ; Lee 0x153
-    movff TABLAT, LATC
-    bsf LATD, 3, 1        ; Enciende RD3
-    call nopes
-    bcf LATD, 3, 1        ; Apaga RD3  */
     
     btfss PORTB,0,1
     call heat
     call peru
     btfss PORTA,0,1
     bsf LATE,0,1
-    btfsc PORTA,0,1
+    //btfsc PORTA,0,1
     bcf LATE,0,1
     
     
