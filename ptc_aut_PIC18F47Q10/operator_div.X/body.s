@@ -147,6 +147,10 @@ cum_bit_min:
     movlw 00000300H
     movwf TBLPTRL,1
     
+    TBLRD*
+    movlw
+    
+    
     
     
     
