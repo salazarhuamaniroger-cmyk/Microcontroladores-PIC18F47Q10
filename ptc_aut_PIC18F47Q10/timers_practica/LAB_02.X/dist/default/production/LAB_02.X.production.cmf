@@ -1,0 +1,311 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/body.o
+bioloco CODE 0 0 0 184 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 184-1FFFF 1
+IDLOC 200000-2000FF 1
+SMALLCONST 1000-FFFF 1
+SMALLCONST 11000-1FFFF 1
+CODE 184-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 184-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 0-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1000-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/body.o
+0 bioloco CODE >227:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1A bioloco CODE >233:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1C bioloco CODE >234:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1E bioloco CODE >235:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+20 bioloco CODE >236:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+22 bioloco CODE >237:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+24 bioloco CODE >238:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+26 bioloco CODE >239:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+28 bioloco CODE >242:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2A bioloco CODE >245:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2C bioloco CODE >246:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2E bioloco CODE >247:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+30 bioloco CODE >248:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+32 bioloco CODE >249:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+34 bioloco CODE >250:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+36 bioloco CODE >253:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+38 bioloco CODE >254:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3A bioloco CODE >255:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3C bioloco CODE >256:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3E bioloco CODE >259:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+40 bioloco CODE >260:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+42 bioloco CODE >261:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+44 bioloco CODE >262:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+46 bioloco CODE >265:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+48 bioloco CODE >266:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4A bioloco CODE >267:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4C bioloco CODE >270:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4E bioloco CODE >271:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+50 bioloco CODE >274:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+52 bioloco CODE >275:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+54 bioloco CODE >276:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+56 bioloco CODE >279:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+58 bioloco CODE >280:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5A bioloco CODE >283:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5C bioloco CODE >284:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5E bioloco CODE >288:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+60 bioloco CODE >289:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+62 bioloco CODE >290:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+64 bioloco CODE >293:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+66 bioloco CODE >294:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+68 bioloco CODE >295:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6A bioloco CODE >298:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6C bioloco CODE >299:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6E bioloco CODE >300:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+70 bioloco CODE >303:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+72 bioloco CODE >304:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+74 bioloco CODE >305:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+76 bioloco CODE >309:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+78 bioloco CODE >310:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7A bioloco CODE >311:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7C bioloco CODE >312:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7E bioloco CODE >313:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+80 bioloco CODE >314:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+82 bioloco CODE >316:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+84 bioloco CODE >317:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+86 bioloco CODE >319:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+88 bioloco CODE >320:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8A bioloco CODE >323:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8C bioloco CODE >324:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8E bioloco CODE >325:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+90 bioloco CODE >326:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+92 bioloco CODE >327:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+94 bioloco CODE >328:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+96 bioloco CODE >330:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+98 bioloco CODE >331:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9A bioloco CODE >333:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9C bioloco CODE >334:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9E bioloco CODE >337:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A0 bioloco CODE >338:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A2 bioloco CODE >339:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A4 bioloco CODE >340:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A6 bioloco CODE >341:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A8 bioloco CODE >342:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AA bioloco CODE >344:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AC bioloco CODE >345:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AE bioloco CODE >347:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B0 bioloco CODE >348:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B2 bioloco CODE >351:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B4 bioloco CODE >352:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B6 bioloco CODE >353:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B8 bioloco CODE >354:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BA bioloco CODE >355:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BC bioloco CODE >356:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BE bioloco CODE >358:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C0 bioloco CODE >359:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C2 bioloco CODE >361:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C4 bioloco CODE >362:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C6 bioloco CODE >365:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C8 bioloco CODE >366:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CA bioloco CODE >370:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CC bioloco CODE >375:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CE bioloco CODE >376:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D0 bioloco CODE >377:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D2 bioloco CODE >380:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D4 bioloco CODE >381:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D6 bioloco CODE >382:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D8 bioloco CODE >385:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DA bioloco CODE >386:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DC bioloco CODE >387:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DE bioloco CODE >390:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E0 bioloco CODE >391:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E2 bioloco CODE >393:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E4 bioloco CODE >394:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E6 bioloco CODE >396:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E8 bioloco CODE >397:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EA bioloco CODE >399:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EC bioloco CODE >402:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EE bioloco CODE >404:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F2 bioloco CODE >407:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F4 bioloco CODE >408:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F8 bioloco CODE >409:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+FA bioloco CODE >410:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+FE bioloco CODE >411:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+100 bioloco CODE >413:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+102 bioloco CODE >414:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+106 bioloco CODE >415:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+108 bioloco CODE >416:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+10C bioloco CODE >417:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+10E bioloco CODE >419:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+110 bioloco CODE >420:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+114 bioloco CODE >421:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+116 bioloco CODE >422:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11A bioloco CODE >423:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11C bioloco CODE >425:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11E bioloco CODE >426:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+122 bioloco CODE >427:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+124 bioloco CODE >428:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+128 bioloco CODE >429:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12A bioloco CODE >432:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12C bioloco CODE >433:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12E bioloco CODE >434:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+130 bioloco CODE >436:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+132 bioloco CODE >437:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+134 bioloco CODE >441:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+136 bioloco CODE >442:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+138 bioloco CODE >444:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13A bioloco CODE >445:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13C bioloco CODE >446:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13E bioloco CODE >447:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+150 bioloco CODE >451:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+160 bioloco CODE >454:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+170 bioloco CODE >457:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+180 bioloco CODE >460:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 184 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000C 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+isa$xinst 0 0 ABS 0 - build/default/production/body.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000C 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Lbioloco 0 0 ABS 0 bioloco -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/body.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hbioloco 0 0 ABS 0 bioloco -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

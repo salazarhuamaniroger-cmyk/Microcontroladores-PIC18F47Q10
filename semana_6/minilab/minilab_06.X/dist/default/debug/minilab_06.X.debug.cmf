@@ -1,0 +1,298 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/body.o
+TIMER CODE 0 0 0 11C 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 11C-1FFFF 1
+IDLOC 200000-2000FF 1
+SMALLCONST 1000-FFFF 1
+SMALLCONST 11000-1FFFF 1
+CODE 11C-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 11C-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 0-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1000-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/body.o
+0 TIMER CODE >8:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+1A TIMER CODE >14:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+1C TIMER CODE >15:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+1E TIMER CODE >16:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+20 TIMER CODE >17:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+22 TIMER CODE >18:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+24 TIMER CODE >21:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+26 TIMER CODE >22:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+28 TIMER CODE >23:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+2A TIMER CODE >24:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+2C TIMER CODE >25:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+2E TIMER CODE >26:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+30 TIMER CODE >27:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+32 TIMER CODE >28:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+34 TIMER CODE >29:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+36 TIMER CODE >31:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+38 TIMER CODE >32:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+3A TIMER CODE >33:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+3C TIMER CODE >34:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+3E TIMER CODE >37:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+40 TIMER CODE >38:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+42 TIMER CODE >39:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+44 TIMER CODE >43:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+46 TIMER CODE >44:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+48 TIMER CODE >45:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+4A TIMER CODE >48:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+4C TIMER CODE >49:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+4E TIMER CODE >52:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+50 TIMER CODE >53:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+52 TIMER CODE >54:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+54 TIMER CODE >57:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+56 TIMER CODE >58:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+58 TIMER CODE >59:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+5A TIMER CODE >62:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+5C TIMER CODE >63:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+5E TIMER CODE >66:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+60 TIMER CODE >67:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+62 TIMER CODE >68:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+64 TIMER CODE >71:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+66 TIMER CODE >72:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+68 TIMER CODE >73:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+6A TIMER CODE >78:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+6C TIMER CODE >79:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+6E TIMER CODE >80:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+70 TIMER CODE >81:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+72 TIMER CODE >82:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+74 TIMER CODE >83:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+76 TIMER CODE >85:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+78 TIMER CODE >86:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+7A TIMER CODE >88:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+7C TIMER CODE >89:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+7E TIMER CODE >92:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+80 TIMER CODE >93:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+82 TIMER CODE >94:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+84 TIMER CODE >95:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+86 TIMER CODE >96:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+88 TIMER CODE >97:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+8A TIMER CODE >99:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+8C TIMER CODE >100:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+8E TIMER CODE >102:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+90 TIMER CODE >103:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+92 TIMER CODE >106:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+94 TIMER CODE >107:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+96 TIMER CODE >108:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+98 TIMER CODE >109:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+9A TIMER CODE >110:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+9C TIMER CODE >111:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+9E TIMER CODE >113:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+A0 TIMER CODE >114:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+A2 TIMER CODE >116:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+A4 TIMER CODE >117:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+A6 TIMER CODE >120:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+A8 TIMER CODE >121:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+AA TIMER CODE >122:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+AC TIMER CODE >123:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+AE TIMER CODE >124:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+B0 TIMER CODE >125:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+B2 TIMER CODE >127:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+B4 TIMER CODE >128:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+B6 TIMER CODE >130:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+B8 TIMER CODE >131:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+BA TIMER CODE >134:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+BC TIMER CODE >135:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+BE TIMER CODE >136:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+C0 TIMER CODE >137:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+C2 TIMER CODE >138:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+C4 TIMER CODE >139:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+C6 TIMER CODE >141:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+C8 TIMER CODE >142:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+CA TIMER CODE >144:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+CC TIMER CODE >145:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+CE TIMER CODE >148:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+D0 TIMER CODE >149:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+D2 TIMER CODE >150:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+D4 TIMER CODE >151:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+D6 TIMER CODE >152:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+D8 TIMER CODE >153:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+DA TIMER CODE >155:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+DC TIMER CODE >156:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+DE TIMER CODE >158:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+E0 TIMER CODE >159:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+E2 TIMER CODE >162:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+E4 TIMER CODE >163:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+E6 TIMER CODE >164:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+E8 TIMER CODE >165:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+EA TIMER CODE >166:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+EC TIMER CODE >167:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+EE TIMER CODE >169:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+F0 TIMER CODE >170:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+F2 TIMER CODE >172:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+F4 TIMER CODE >173:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+F6 TIMER CODE >176:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+F8 TIMER CODE >177:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+FA TIMER CODE >178:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+FC TIMER CODE >179:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+FE TIMER CODE >180:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+100 TIMER CODE >181:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+102 TIMER CODE >183:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+104 TIMER CODE >184:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+106 TIMER CODE >186:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+108 TIMER CODE >187:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+10A TIMER CODE >192:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+10C TIMER CODE >193:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+10E TIMER CODE >195:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+110 TIMER CODE >197:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+112 TIMER CODE >198:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+114 TIMER CODE >199:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+116 TIMER CODE >202:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+118 TIMER CODE >203:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+11A TIMER CODE >205:D:\CURSOS MECA\Ciclo_5\Microcontroladores\semana_6\minilab\minilab_06.X\body.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 11C 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000C 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+isa$xinst 0 0 ABS 0 - build/default/debug/body.o
+__HTIMER 0 0 ABS 0 TIMER -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000C 0 CONFIG 4 config -
+__LTIMER 0 0 ABS 0 TIMER -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/debug/body.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

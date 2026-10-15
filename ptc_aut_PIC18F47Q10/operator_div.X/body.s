@@ -69,7 +69,7 @@ configuracion:
     bcf ANSELB,5,1
     
     // habilitador 2
-    bcf PORTC,1,1
+    bcf TRISC,1,1
     bcf ANSELC,1,1
     
     // habilitador 3
