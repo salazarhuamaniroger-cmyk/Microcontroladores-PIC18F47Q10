@@ -5,12 +5,79 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "body.s" 2
-;==============================================================================
-; LAB: Parpadeo complementario de LEDs + mensajes en display de 7 segmentos
-; MICROCONTROLADOR: PIC18F47Q10 a 4 MHz
-;==============================================================================
+PROCESSOR 18F47Q10
+# 1 "./header.inc" 1
+; PIC18F47Q10 Configuration Bit Settings
 
-    PROCESSOR 18F47Q10
+; Assembly source line config statements
+
+; CONFIG1L
+  CONFIG FEXTOSC = ECH ; External Oscillator mode Selection bits (EC (external clock) above 8 MHz; PFM set to high power)
+  CONFIG RSTOSC = EXTOSC ; Power-up default value for COSC bits (EXTOSC operating per FEXTOSC bits (device manufacturing default))
+
+; CONFIG1H
+  CONFIG CLKOUTEN = OFF ; Clock Out Enable bit (CLKOUT function is disabled)
+  CONFIG CSWEN = ON ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
+  CONFIG FCMEN = ON ; Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor enabled)
+
+; CONFIG2L
+  CONFIG MCLRE = EXTMCLR ; Master Clear Enable bit (MCLR pin (RE3) is MCLR)
+  CONFIG PWRTE = ON ; Power-up Timer Enable bit (Power up timer enabled)
+  CONFIG LPBOREN = OFF ; Low-power BOR enable bit (Low power BOR is disabled)
+  CONFIG BOREN = OFF ; Brown-out Reset Enable bits (Brown-out Reset disabled)
+
+; CONFIG2H
+  CONFIG BORV = VBOR_190 ; Brown Out Reset Voltage selection bits (Brown-out Reset Voltage (VBOR) set to 1.90V)
+  CONFIG ZCD = OFF ; ZCD Disable bit (ZCD disabled. ZCD can be enabled by setting the ZCDSEN bit of ZCDCON)
+  CONFIG PPS1WAY = ON ; PPSLOCK bit One-Way Set Enable bit (PPSLOCK bit can be cleared and set only once; PPS registers remain locked after one clear/set cycle)
+  CONFIG STVREN = ON ; Stack Full/Underflow Reset Enable bit (Stack full/underflow will cause Reset)
+  CONFIG XINST = OFF ; Extended Instruction Set Enable bit (Extended Instruction Set and Indexed Addressing Mode disabled)
+
+; CONFIG3L
+  CONFIG WDTCPS = WDTCPS_31 ; WDT Period Select bits (Divider ratio 1:65536; software control of WDTPS)
+  CONFIG WDTE = OFF ; WDT operating mode (WDT Disabled)
+
+; CONFIG3H
+  CONFIG WDTCWS = WDTCWS_7 ; WDT Window Select bits (window always open (100%); software control; keyed access not required)
+  CONFIG WDTCCS = SC ; WDT input clock selector (Software Control)
+
+; CONFIG4L
+  CONFIG WRT0 = OFF ; Write Protection Block 0 (Block 0 (000800-003FFFh) not write-protected)
+  CONFIG WRT1 = OFF ; Write Protection Block 1 (Block 1 (004000-007FFFh) not write-protected)
+  CONFIG WRT2 = OFF ; Write Protection Block 2 (Block 2 (008000-00BFFFh) not write-protected)
+  CONFIG WRT3 = OFF ; Write Protection Block 3 (Block 3 (00C000-00FFFFh) not write-protected)
+  CONFIG WRT4 = OFF ; Write Protection Block 4 (Block 4 (010000-013FFFh) not write-protected)
+  CONFIG WRT5 = OFF ; Write Protection Block 5 (Block 5 (014000-017FFFh) not write-protected)
+  CONFIG WRT6 = OFF ; Write Protection Block 6 (Block 6 (018000-01BFFFh) not write-protected)
+  CONFIG WRT7 = OFF ; Write Protection Block 7 (Block 7 (01C000-01FFFFh) not write-protected)
+
+; CONFIG4H
+  CONFIG WRTC = OFF ; Configuration Register Write Protection bit (Configuration registers (300000-30000Bh) not write-protected)
+  CONFIG WRTB = OFF ; Boot Block Write Protection bit (Boot Block (000000-0007FFh) not write-protected)
+  CONFIG WRTD = OFF ; Data EEPROM Write Protection bit (Data EEPROM not write-protected)
+  CONFIG SCANE = ON ; Scanner Enable bit (Scanner module is available for use, SCANMD bit can control the module)
+  CONFIG LVP = ON ; Low Voltage Programming Enable bit (Low voltage programming enabled. MCLR/VPP pin function is MCLR. MCLRE configuration bit is ignored)
+
+; CONFIG5L
+  CONFIG CP = OFF ; UserNVM Program Memory Code Protection bit (UserNVM code protection disabled)
+  CONFIG CPD = OFF ; DataNVM Memory Code Protection bit (DataNVM code protection disabled)
+
+; CONFIG5H
+
+; CONFIG6L
+  CONFIG EBTR0 = OFF ; Table Read Protection Block 0 (Block 0 (000800-003FFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR1 = OFF ; Table Read Protection Block 1 (Block 1 (004000-007FFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR2 = OFF ; Table Read Protection Block 2 (Block 2 (008000-00BFFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR3 = OFF ; Table Read Protection Block 3 (Block 3 (00C000-00FFFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR4 = OFF ; Table Read Protection Block 4 (Block 4 (010000-013FFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR5 = OFF ; Table Read Protection Block 5 (Block 5 (014000-017FFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR6 = OFF ; Table Read Protection Block 6 (Block 6 (018000-01BFFFh) not protected from table reads executed in other blocks)
+  CONFIG EBTR7 = OFF ; Table Read Protection Block 7 (Block 7 (01C000-01FFFFh) not protected from table reads executed in other blocks)
+
+; CONFIG6H
+  CONFIG EBTRB = OFF ; Boot Block Table Read Protection bit (Boot Block (000000-0007FFh) not protected from table reads executed in other blocks)
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.inc" 1 3
 
 
@@ -24188,287 +24255,244 @@ stk_offset SET 0
 auto_size SET 0
 ENDM
 # 6 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.inc" 2 3
-# 8 "body.s" 2
-# 1 "./header.inc" 1
-; PIC18F47Q10 Configuration Bit Settings
-
-; Assembly source line config statements
-
-; CONFIG1L
-  CONFIG FEXTOSC = ECH ; External Oscillator mode Selection bits (EC (external clock) above 8 MHz; PFM set to high power)
-  CONFIG RSTOSC = EXTOSC ; Power-up default value for COSC bits (EXTOSC operating per FEXTOSC bits (device manufacturing default))
-
-; CONFIG1H
-  CONFIG CLKOUTEN = OFF ; Clock Out Enable bit (CLKOUT function is disabled)
-  CONFIG CSWEN = ON ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
-  CONFIG FCMEN = ON ; Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor enabled)
-
-; CONFIG2L
-  CONFIG MCLRE = EXTMCLR ; Master Clear Enable bit (MCLR pin (((PORTE) and 0FFh), 3, a) is MCLR)
-  CONFIG PWRTE = ON ; Power-up Timer Enable bit (Power up timer enabled)
-  CONFIG LPBOREN = OFF ; Low-power ((PCON0) and 0FFh), 0, a enable bit (Low power ((PCON0) and 0FFh), 0, a is disabled)
-  CONFIG BOREN = OFF ; Brown-out Reset Enable bits (Brown-out Reset disabled)
-
-; CONFIG2H
-  CONFIG BORV = VBOR_190 ; Brown Out Reset Voltage selection bits (Brown-out Reset Voltage (VBOR) set to 1.90V)
-  CONFIG ZCD = OFF ; ZCD Disable bit (ZCD disabled. ZCD can be enabled by setting the ((ZCDCON) and 0FFh), 7, b bit of ZCDCON)
-  CONFIG PPS1WAY = ON ; PPSLOCK bit One-Way Set Enable bit (PPSLOCK bit can be cleared and set only once; PPS registers remain locked after one clear/set cycle)
-  CONFIG STVREN = ON ; Stack Full/Underflow Reset Enable bit (Stack full/underflow will cause Reset)
-  CONFIG XINST = OFF ; Extended Instruction Set Enable bit (Extended Instruction Set and Indexed Addressing Mode disabled)
-
-; CONFIG3L
-  CONFIG WDTCPS = WDTCPS_31 ; WDT Period Select bits (Divider ratio 1:65536; software control of WDTPS)
-  CONFIG WDTE = OFF ; WDT operating mode (WDT Disabled)
-
-; CONFIG3H
-  CONFIG WDTCWS = WDTCWS_7 ; WDT Window Select bits (window always open (100%); software control; keyed access not required)
-  CONFIG WDTCCS = SC ; WDT input clock selector (Software Control)
-
-; CONFIG4L
-  CONFIG WRT0 = OFF ; Write Protection Block 0 (Block 0 (000800-003FFFh) not write-protected)
-  CONFIG WRT1 = OFF ; Write Protection Block 1 (Block 1 (004000-007FFFh) not write-protected)
-  CONFIG WRT2 = OFF ; Write Protection Block 2 (Block 2 (008000-00BFFFh) not write-protected)
-  CONFIG WRT3 = OFF ; Write Protection Block 3 (Block 3 (00C000-00FFFFh) not write-protected)
-  CONFIG WRT4 = OFF ; Write Protection Block 4 (Block 4 (010000-013FFFh) not write-protected)
-  CONFIG WRT5 = OFF ; Write Protection Block 5 (Block 5 (014000-017FFFh) not write-protected)
-  CONFIG WRT6 = OFF ; Write Protection Block 6 (Block 6 (018000-01BFFFh) not write-protected)
-  CONFIG WRT7 = OFF ; Write Protection Block 7 (Block 7 (01C000-01FFFFh) not write-protected)
-
-; CONFIG4H
-  CONFIG WRTC = OFF ; Configuration Register Write Protection bit (Configuration registers (300000-30000Bh) not write-protected)
-  CONFIG WRTB = OFF ; Boot Block Write Protection bit (Boot Block (000000-0007FFh) not write-protected)
-  CONFIG WRTD = OFF ; Data EEPROM Write Protection bit (Data EEPROM not write-protected)
-  CONFIG SCANE = ON ; Scanner Enable bit (Scanner module is available for use, ((PMD0) and 0FFh), 3, b bit can control the module)
-  CONFIG LVP = ON ; Low Voltage Programming Enable bit (Low voltage programming enabled. MCLR/VPP pin function is MCLR. MCLRE configuration bit is ignored)
-
-; CONFIG5L
-  CONFIG CP = OFF ; UserNVM Program Memory Code Protection bit (UserNVM code protection disabled)
-  CONFIG CPD = OFF ; DataNVM Memory Code Protection bit (DataNVM code protection disabled)
-
-; CONFIG5H
-
-; CONFIG6L
-  CONFIG EBTR0 = OFF ; Table Read Protection Block 0 (Block 0 (000800-003FFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR1 = OFF ; Table Read Protection Block 1 (Block 1 (004000-007FFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR2 = OFF ; Table Read Protection Block 2 (Block 2 (008000-00BFFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR3 = OFF ; Table Read Protection Block 3 (Block 3 (00C000-00FFFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR4 = OFF ; Table Read Protection Block 4 (Block 4 (010000-013FFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR5 = OFF ; Table Read Protection Block 5 (Block 5 (014000-017FFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR6 = OFF ; Table Read Protection Block 6 (Block 6 (018000-01BFFFh) not protected from table reads executed in other blocks)
-  CONFIG EBTR7 = OFF ; Table Read Protection Block 7 (Block 7 (01C000-01FFFFh) not protected from table reads executed in other blocks)
-
-; CONFIG6H
-  CONFIG EBTRB = OFF ; Boot Block Table Read Protection bit (Boot Block (000000-0007FFh) not protected from table reads executed in other blocks)
-# 9 "body.s" 2
-
-;------------------------------------------------------------------------------
-; VARIABLES
-;------------------------------------------------------------------------------
-OPC EQU 20H ; Opción del DIP (0 a 3)
-FASE EQU 21H ; bit0 = 1 -> LD1 encendido ; bit0 = 0 -> LD1 apagado
-CUENTA EQU 22H ; Ticks que faltan para cambiar de fase
-BASE EQU 23H ; OPC x 8 (inicio del mensaje dentro de la tabla)
-DIG EQU 24H ; Dígito que toca mostrar (0,2,4,6)
-MASCARA EQU 25H ; Habilitador del dígito: 01H, 02H, 04H, 08H
-TEMP EQU 26H ; Auxiliar
-
-;------------------------------------------------------------------------------
-; INICIO Y CONFIGURACIÓN
-;------------------------------------------------------------------------------
-    PSECT UPECINO, class=CODE, reloc=2, abs
-
-UPECINO:
+# 73 "./header.inc" 2
+# 3 "body.s" 2
+ PSECT bioloco, class=CODE, reloc=2, abs
+bioloco:
     ORG 000000H
     bra configuro
 
-    ORG 000020H
+    ORG 00001AH
 
 configuro:
-    ; 1. Oscilador interno a 4 MHz
+    ; --- Configuración del oscilador interno a 4 MHz ---
     movlb 0EH
+    movlw 60H ; HFINTOSC con divisor 1:1
+    movwf OSCCON1,1
+    movlw 02H ; Frecuencia a 4 MHz
+    movwf OSCFRQ, 1
+    movlw 50H
+    movwf OSCEN, 1
+
+    ; --- Configuración de entradas y salidas ---
+    movlb 0FH
+
+    ; DIP Switch: ((PORTB) and 0FFh), 0, a y ((PORTB) and 0FFh), 1, a como entradas con pull-up
+    bsf TRISB, 0, 1
+    bsf TRISB, 1, 1
+    bcf ANSELB, 0, 1
+    bcf ANSELB, 1, 1
+    bsf WPUB, 0, 1
+    bsf WPUB, 1, 1
+
+    ; Leds Complementarios: ((PORTD) and 0FFh), 0, a y ((PORTD) and 0FFh), 1, a como salidas digitales
+    bcf TRISD, 0, 1
+    bcf TRISD, 1, 1
+    bcf ANSELD, 0, 1
+    bcf ANSELD, 1, 1
+
+    ; Display: Transistores en ((PORTA) and 0FFh), 0, a-((PORTA) and 0FFh), 3, a
+    movlw 0F0H ; ((PORTA) and 0FFh), 0, a, ((PORTA) and 0FFh), 1, a, ((PORTA) and 0FFh), 2, a, ((PORTA) and 0FFh), 3, a como salidas (0)
+    movwf TRISA, 1
+    movwf ANSELA, 1
+    clrf LATA, 1 ; Apagamos los transistores por seguridad
+
+    ; Display: Segmentos en ((PORTC) and 0FFh), 0, a-((PORTC) and 0FFh), 7, a
+    movlw 00H
+    movwf TRISC, 1
+    movwf ANSELC, 1
+
+    ; Puertos adicionales que tenías en tu base
+    bcf TRISE, 0, 1
+    bcf ANSELE, 0, 1
+
+    ; Inicializar punteros
+    clrf TBLPTRU, 1
+    movlw 01H
+    movwf TBLPTRH, 1
+
+    ; --- Configuración inicial del TIMER0 (Modo 8 bits) ---
+    movlw 80H
+    movwf T0CON0, 1
+
+    ; Estado inicial complementario de los LEDs en el puerto D
+    bsf LATD, 0, 1 ; LED 0 inicia ON
+    bcf LATD, 1, 1 ; LED 1 inicia OFF
+
+loop:
+    ; 1. CONMUTAR LEDS COMPLEMENTARIOS
+    movlb 0FH ; Aseguramos Banco 15
+    btg LATD, 0, 1
+    btg LATD, 1, 1
+
+    ; 2. LECTURA DEL DIP SWITCH (((PORTB) and 0FFh), 1, a, ((PORTB) and 0FFh), 0, a) PARA CARGAR EL TIMER
+    btfss PORTB, 1, 1
+    bra revisar_rb0_0
+    bra revisar_rb0_1
+
+revisar_rb0_0:
+    btfss PORTB, 0, 1
+    bra opc_00 ; (00)
+    bra opc_01 ; (01)
+
+revisar_rb0_1:
+    btfss PORTB, 0, 1
+    bra opc_10 ; (10)
+    bra opc_11 ; (11)
+
+    ; 3. LÓGICA ASIMÉTRICA: Carga de valores al Timer0
+opc_00: ; 1 Hz / 60% ((STATUS) and 0FFh), 1, a (Periodo 1000ms: 600ms ON / 400ms OFF)
+    movlw 50H
+    movwf PRODL, 1
+    movlw 4CH
+    movwf T0CON1, 1
+    btfss LATD, 0, 1 ; Revisamos estado del LED 0
+    bra opc_00_off
+opc_00_on:
+    movlw 146
+    bra cargar_tmr
+opc_00_off:
+    movlw 98
+    bra cargar_tmr
+
+opc_01: ; 2 Hz / 40% ((STATUS) and 0FFh), 1, a (Periodo 500ms: 200ms ON / 300ms OFF)
     movlw 60H
-    movwf OSCCON1
-    movlw 02H
-    movwf OSCFRQ
-    movlw 40H
-    movwf OSCEN
+    movwf PRODL, 1
+    movlw 4BH
+    movwf T0CON1, 1
+    btfss LATD, 0, 1
+    bra opc_01_off
+opc_01_on:
+    movlw 98
+    bra cargar_tmr
+opc_01_off:
+    movlw 146
+    bra cargar_tmr
 
-    ; 2. Puertos
-    movlb 0FH
-    clrf ANSELA
-    clrf ANSELB
-    clrf ANSELC
-    clrf ANSELD
+opc_10: ; 5 Hz / 20% ((STATUS) and 0FFh), 1, a (Periodo 200ms: 40ms ON / 160ms OFF)
+    movlw 70H
+    movwf PRODL, 1
+    movlw 4AH
+    movwf T0CON1, 1
+    btfss LATD, 0, 1
+    bra opc_10_off
+opc_10_on:
+    movlw 39
+    bra cargar_tmr
+opc_10_off:
+    movlw 156
+    bra cargar_tmr
 
-    clrf TRISA
-    clrf TRISC
-    clrf TRISD
+opc_11: ; 8 Hz / 10% ((STATUS) and 0FFh), 1, a (Periodo 125ms: 12.5ms ON / 112.5ms OFF)
+    movlw 80H
+    movwf PRODL, 1
+    movlw 49H
+    movwf T0CON1, 1
+    btfss LATD, 0, 1
+    bra opc_11_off
+opc_11_on:
+    movlw 24
+    bra cargar_tmr
+opc_11_off:
+    movlw 220
+    bra cargar_tmr
 
-    movlw 03H
-    movwf TRISB
-    movwf WPUB
+cargar_tmr:
+    clrf TMR0L, 1 ; Reiniciar cuenta a 0 para exactitud
+    movwf TMR0H, 1 ; Carga el límite
 
-    clrf LATA
-    clrf LATC
-    clrf LATD
-
-    ; 3. Timer0: 8 bits, Fosc/4, prescaler 1:4, postscaler 1:5
-    movlw 42H
-    movwf T0CON1
-    movlw 124
-    movwf TMR0H
-    movlw 84H
-    movwf T0CON0
-
-    ; 4. Variables
-    movlw 0FFH
-    movwf OPC
-    clrf FASE
-    clrf DIG
-    movlw 01H
-    movwf MASCARA
-
-;==============================================================================
-; BUCLE PRINCIPAL
-;==============================================================================
-inicio:
-    call esperar_tick
-    call leer_dip
-    call actualizar_parpadeo
-    call refrescar_digito
-    bra inicio
-
-;------------------------------------------------------------------------------
-esperar_tick:
-    movlb 0EH
+    ; 4. BUCLE DE MULTIPLEXACIÓN Y ESPERA DEL TIMER
 espera_tmr0:
-    btfss PIR0, 5
-    bra espera_tmr0
-    bcf PIR0, 5
     movlb 0FH
-    return
 
-;------------------------------------------------------------------------------
-leer_dip:
-    movf PORTB, 0
-    andlw 03H
-    movwf TEMP
-    xorwf OPC, 0
-    bnz dip_cambio
-    return
+    ; =========================================================
+    ; LECTURA AL INSTANTE (Ahora en el puerto B)
+    ; =========================================================
+    btfss PORTB, 1, 1
+    bra ver_rb0_0
+    bra ver_rb0_1
 
-dip_cambio:
-    movf TEMP, 0
-    movwf OPC
+ver_rb0_0:
+    btfss PORTB, 0, 1
+    bra pon_wan
+    bra pon_thu
 
-    rlncf OPC, 0
-    movwf BASE
-    rlncf BASE, 0
-    movwf BASE
-    rlncf BASE, 0
-    movwf BASE
+ver_rb0_1:
+    btfss PORTB, 0, 1
+    bra pon_tri
+    bra pon_for
 
-    movlw 01H
-    movwf FASE
-    call cargar_cuenta
-    call poner_leds
-    return
+pon_wan:
+    movlw 50H
+    bra actualiza_palabra
+pon_thu:
+    movlw 60H
+    bra actualiza_palabra
+pon_tri:
+    movlw 70H
+    bra actualiza_palabra
+pon_for:
+    movlw 80H
 
-;------------------------------------------------------------------------------
-actualizar_parpadeo:
-    decfsz CUENTA, 1
-    return
-    btg FASE, 0
-    call cargar_cuenta
-    call poner_leds
-    return
+actualiza_palabra:
+    movwf PRODL, 1 ; Actualiza la dirección al momento
 
-;------------------------------------------------------------------------------
-cargar_cuenta:
-    rlncf OPC, 0
-    movwf TEMP
-    btfsc FASE, 0
-    bra cuenta_alto
-    movf TEMP, 0
-    call TABLA_BAJO
-    movwf CUENTA
-    return
-cuenta_alto:
-    movf TEMP, 0
-    call TABLA_ALTO
-    movwf CUENTA
-    return
+    movff PRODL, TBLPTRL ; Recarga el puntero a la letra inicial
 
-;------------------------------------------------------------------------------
-poner_leds:
-    btfsc FASE, 0
-    bra leds_alto
-    movlw 02H ; ((PORTD) and 0FFh), 1, a en alto (fase baja del ciclo principal)
-    movwf LATD
-    return
-leds_alto:
-    movlw 01H ; ((PORTD) and 0FFh), 0, a en alto (fase alta del ciclo principal - 60%)
-    movwf LATD
-    return
+    ; Multiplexamos a velocidad saludable (1 ms por dígito en el puerto A)
+    TBLRD*+
+    movff TABLAT, LATC
+    bsf LATA, 0, 1
+    call nopes
+    bcf LATA, 0, 1
 
-;------------------------------------------------------------------------------
-refrescar_digito:
-    clrf LATA
+    TBLRD*+
+    movff TABLAT, LATC
+    bsf LATA, 1, 1
+    call nopes
+    bcf LATA, 1, 1
 
-    movf BASE, 0
-    addwf DIG, 0
-    call TABLA_SEG
-    movwf LATC
+    TBLRD*+
+    movff TABLAT, LATC
+    bsf LATA, 2, 1
+    call nopes
+    bcf LATA, 2, 1
 
-    movf MASCARA, 0
-    movwf LATA
+    TBLRD*+
+    movff TABLAT, LATC
+    bsf LATA, 3, 1
+    call nopes
+    bcf LATA, 3, 1
 
-    incf DIG, 1
-    incf DIG, 1
-    rlncf MASCARA, 1
-    btfss MASCARA, 4
-    return
-    clrf DIG
-    movlw 01H
-    movwf MASCARA
-    return
+    ; Polling: Revisar si el Timer terminó
+    movlb 0EH
+    btfss PIR0, 5, 1
+    bra espera_tmr0 ; Si NO ha terminado, vuelve a dibujar la palabra
 
-;==============================================================================
-; TABLAS CON retlw
-;==============================================================================
-    ORG 000200H
+    bcf PIR0, 5, 1 ; Si SÍ, limpia bandera
+    bra loop ; Salta al inicio para invertir los LEDs
 
-TABLA_ALTO:
-    addwf PCL, 1
-    retlw 240
-    retlw 80
-    retlw 16
-    retlw 5
+    ; --- RUTINA NOPES (Retardo de 1 ms exacto a 4 MHz) ---
+nopes:
+    movlw 250 ; Cargamos 250 iteraciones
+    movwf 20H, 1 ; Guardamos en registro de RAM genérico (0x20)
+retardo:
+    nop ; 1 ciclo
+    decfsz 20H, 1, 1 ; Resta 1 y salta si es 0 (1 ciclo)
+    bra retardo ; Vuelve a restar (2 ciclos)
+    return ; (Total = 4 ciclos x 250 = 1000 us = 1 ms)
 
-TABLA_BAJO:
-    addwf PCL, 1
-    retlw 160
-    retlw 120
-    retlw 64
-    retlw 45
+    ; --- Tablas de mensajes ---
+    ORG 000150H
+WAN: DB 2AH, 77H, 54H, 00H
 
-TABLA_SEG:
-    addwf PCL, 1
-    retlw 2AH ; W (Segmentos f, b y d encendidos exclusivamente)
-    retlw 77H ; H
-    retlw 54H ; U
-    retlw 00H ; Espacio
-    retlw 78H
-    retlw 76H
-    retlw 3EH
-    retlw 00H
-    retlw 78H
-    retlw 50H
-    retlw 06H
-    retlw 00H
-    retlw 71H
-    retlw 3FH
-    retlw 50H
-    retlw 00H
+    ORG 000160H
+THU: DB 78H, 76H, 3EH, 00H
 
-    end UPECINO
+    ORG 000170H
+TRI: DB 78H, 50H, 06H, 00H
+
+    ORG 000180H
+FOR: DB 71H, 3FH, 50H, 00H
+
+    end bioloco

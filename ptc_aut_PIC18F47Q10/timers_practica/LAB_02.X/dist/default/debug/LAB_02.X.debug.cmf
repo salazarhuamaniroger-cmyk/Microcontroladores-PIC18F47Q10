@@ -12,7 +12,7 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $build/default/debug/body.o
-UPECINO CODE 0 0 0 236 1 2
+bioloco CODE 0 0 0 184 1 2
 config CONFIG 4 300000 300000 C 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -34,16 +34,16 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 236-1FFFF 1
+CONST 184-1FFFF 1
 IDLOC 200000-2000FF 1
 SMALLCONST 1000-FFFF 1
 SMALLCONST 11000-1FFFF 1
-CODE 236-1FFFF 1
+CODE 184-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK14 E00-E1E 1
-BIGRAM 236-CFF 1
+BIGRAM 184-CFF 1
 BIGRAM E00-E1E 1
 BIGSFR D00-DFF 1
 BIGSFR E1F-FFF 1
@@ -65,139 +65,149 @@ MEDIUMCONST 11000-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $build/default/debug/body.o
-0 UPECINO CODE >28:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-20 UPECINO CODE >34:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-22 UPECINO CODE >35:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-24 UPECINO CODE >36:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-26 UPECINO CODE >37:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-28 UPECINO CODE >38:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-2A UPECINO CODE >39:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-2C UPECINO CODE >40:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-2E UPECINO CODE >43:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-30 UPECINO CODE >44:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-32 UPECINO CODE >45:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-34 UPECINO CODE >46:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-36 UPECINO CODE >47:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-38 UPECINO CODE >49:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-3A UPECINO CODE >50:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-3C UPECINO CODE >51:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-3E UPECINO CODE >53:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-40 UPECINO CODE >54:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-42 UPECINO CODE >55:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-44 UPECINO CODE >57:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-46 UPECINO CODE >58:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-48 UPECINO CODE >59:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-4A UPECINO CODE >62:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-4C UPECINO CODE >63:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-4E UPECINO CODE >64:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-50 UPECINO CODE >65:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-52 UPECINO CODE >66:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-54 UPECINO CODE >67:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-56 UPECINO CODE >70:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-58 UPECINO CODE >71:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-5A UPECINO CODE >72:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-5C UPECINO CODE >73:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-5E UPECINO CODE >74:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-60 UPECINO CODE >75:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-62 UPECINO CODE >81:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-66 UPECINO CODE >82:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-6A UPECINO CODE >83:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-6E UPECINO CODE >84:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-72 UPECINO CODE >85:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-74 UPECINO CODE >89:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-76 UPECINO CODE >91:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-78 UPECINO CODE >92:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-7A UPECINO CODE >93:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-7C UPECINO CODE >94:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-7E UPECINO CODE >95:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-80 UPECINO CODE >99:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-82 UPECINO CODE >100:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-84 UPECINO CODE >101:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-86 UPECINO CODE >102:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-88 UPECINO CODE >103:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-8A UPECINO CODE >104:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-8C UPECINO CODE >107:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-8E UPECINO CODE >108:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-90 UPECINO CODE >110:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-92 UPECINO CODE >111:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-94 UPECINO CODE >112:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-96 UPECINO CODE >113:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-98 UPECINO CODE >114:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-9A UPECINO CODE >115:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-9C UPECINO CODE >117:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-9E UPECINO CODE >118:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-A0 UPECINO CODE >119:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-A4 UPECINO CODE >120:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-A8 UPECINO CODE >121:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-AA UPECINO CODE >125:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-AC UPECINO CODE >126:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-AE UPECINO CODE >127:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-B0 UPECINO CODE >128:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-B4 UPECINO CODE >129:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-B8 UPECINO CODE >130:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-BA UPECINO CODE >134:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-BC UPECINO CODE >135:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-BE UPECINO CODE >136:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-C0 UPECINO CODE >137:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-C2 UPECINO CODE >138:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-C4 UPECINO CODE >139:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-C8 UPECINO CODE >140:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-CA UPECINO CODE >141:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-CC UPECINO CODE >143:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-CE UPECINO CODE >144:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-D2 UPECINO CODE >145:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-D4 UPECINO CODE >146:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-D6 UPECINO CODE >150:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-D8 UPECINO CODE >151:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-DA UPECINO CODE >152:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-DC UPECINO CODE >153:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-DE UPECINO CODE >154:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-E0 UPECINO CODE >156:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-E2 UPECINO CODE >157:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-E4 UPECINO CODE >158:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-E6 UPECINO CODE >162:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-E8 UPECINO CODE >164:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-EA UPECINO CODE >165:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-EC UPECINO CODE >166:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-F0 UPECINO CODE >167:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-F2 UPECINO CODE >169:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-F4 UPECINO CODE >170:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-F6 UPECINO CODE >172:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-F8 UPECINO CODE >173:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-FA UPECINO CODE >174:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-FC UPECINO CODE >175:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-FE UPECINO CODE >176:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-100 UPECINO CODE >177:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-102 UPECINO CODE >178:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-104 UPECINO CODE >179:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-106 UPECINO CODE >180:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-200 UPECINO CODE >188:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-202 UPECINO CODE >189:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-204 UPECINO CODE >190:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-206 UPECINO CODE >191:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-208 UPECINO CODE >192:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-20A UPECINO CODE >195:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-20C UPECINO CODE >196:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-20E UPECINO CODE >197:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-210 UPECINO CODE >198:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-212 UPECINO CODE >199:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-214 UPECINO CODE >202:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-216 UPECINO CODE >203:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-218 UPECINO CODE >204:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-21A UPECINO CODE >205:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-21C UPECINO CODE >206:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-21E UPECINO CODE >207:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-220 UPECINO CODE >208:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-222 UPECINO CODE >209:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-224 UPECINO CODE >210:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-226 UPECINO CODE >211:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-228 UPECINO CODE >212:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-22A UPECINO CODE >213:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-22C UPECINO CODE >214:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-22E UPECINO CODE >215:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-230 UPECINO CODE >216:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-232 UPECINO CODE >217:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
-234 UPECINO CODE >218:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+0 bioloco CODE >6:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1A bioloco CODE >12:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1C bioloco CODE >13:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+1E bioloco CODE >14:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+20 bioloco CODE >15:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+22 bioloco CODE >16:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+24 bioloco CODE >17:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+26 bioloco CODE >18:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+28 bioloco CODE >21:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2A bioloco CODE >24:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2C bioloco CODE >25:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+2E bioloco CODE >26:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+30 bioloco CODE >27:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+32 bioloco CODE >28:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+34 bioloco CODE >29:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+36 bioloco CODE >32:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+38 bioloco CODE >33:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3A bioloco CODE >34:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3C bioloco CODE >35:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+3E bioloco CODE >38:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+40 bioloco CODE >39:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+42 bioloco CODE >40:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+44 bioloco CODE >41:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+46 bioloco CODE >44:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+48 bioloco CODE >45:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4A bioloco CODE >46:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4C bioloco CODE >49:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+4E bioloco CODE >50:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+50 bioloco CODE >53:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+52 bioloco CODE >54:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+54 bioloco CODE >55:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+56 bioloco CODE >58:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+58 bioloco CODE >59:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5A bioloco CODE >62:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5C bioloco CODE >63:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+5E bioloco CODE >67:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+60 bioloco CODE >68:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+62 bioloco CODE >69:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+64 bioloco CODE >72:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+66 bioloco CODE >73:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+68 bioloco CODE >74:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6A bioloco CODE >77:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6C bioloco CODE >78:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+6E bioloco CODE >79:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+70 bioloco CODE >82:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+72 bioloco CODE >83:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+74 bioloco CODE >84:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+76 bioloco CODE >88:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+78 bioloco CODE >89:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7A bioloco CODE >90:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7C bioloco CODE >91:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+7E bioloco CODE >92:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+80 bioloco CODE >93:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+82 bioloco CODE >95:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+84 bioloco CODE >96:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+86 bioloco CODE >98:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+88 bioloco CODE >99:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8A bioloco CODE >102:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8C bioloco CODE >103:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+8E bioloco CODE >104:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+90 bioloco CODE >105:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+92 bioloco CODE >106:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+94 bioloco CODE >107:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+96 bioloco CODE >109:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+98 bioloco CODE >110:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9A bioloco CODE >112:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9C bioloco CODE >113:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+9E bioloco CODE >116:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A0 bioloco CODE >117:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A2 bioloco CODE >118:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A4 bioloco CODE >119:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A6 bioloco CODE >120:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+A8 bioloco CODE >121:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AA bioloco CODE >123:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AC bioloco CODE >124:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+AE bioloco CODE >126:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B0 bioloco CODE >127:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B2 bioloco CODE >130:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B4 bioloco CODE >131:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B6 bioloco CODE >132:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+B8 bioloco CODE >133:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BA bioloco CODE >134:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BC bioloco CODE >135:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+BE bioloco CODE >137:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C0 bioloco CODE >138:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C2 bioloco CODE >140:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C4 bioloco CODE >141:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C6 bioloco CODE >144:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+C8 bioloco CODE >145:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CA bioloco CODE >149:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CC bioloco CODE >154:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+CE bioloco CODE >155:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D0 bioloco CODE >156:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D2 bioloco CODE >159:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D4 bioloco CODE >160:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D6 bioloco CODE >161:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+D8 bioloco CODE >164:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DA bioloco CODE >165:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DC bioloco CODE >166:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+DE bioloco CODE >169:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E0 bioloco CODE >170:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E2 bioloco CODE >172:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E4 bioloco CODE >173:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E6 bioloco CODE >175:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+E8 bioloco CODE >176:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EA bioloco CODE >178:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EC bioloco CODE >181:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+EE bioloco CODE >183:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F2 bioloco CODE >186:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F4 bioloco CODE >187:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+F8 bioloco CODE >188:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+FA bioloco CODE >189:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+FE bioloco CODE >190:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+100 bioloco CODE >192:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+102 bioloco CODE >193:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+106 bioloco CODE >194:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+108 bioloco CODE >195:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+10C bioloco CODE >196:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+10E bioloco CODE >198:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+110 bioloco CODE >199:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+114 bioloco CODE >200:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+116 bioloco CODE >201:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11A bioloco CODE >202:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11C bioloco CODE >204:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+11E bioloco CODE >205:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+122 bioloco CODE >206:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+124 bioloco CODE >207:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+128 bioloco CODE >208:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12A bioloco CODE >211:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12C bioloco CODE >212:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+12E bioloco CODE >213:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+130 bioloco CODE >215:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+132 bioloco CODE >216:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+134 bioloco CODE >220:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+136 bioloco CODE >221:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+138 bioloco CODE >223:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13A bioloco CODE >224:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13C bioloco CODE >225:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+13E bioloco CODE >226:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+150 bioloco CODE >230:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+160 bioloco CODE >233:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+170 bioloco CODE >236:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
+180 bioloco CODE >239:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q10\timers_practica\LAB_02.X\body.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -210,7 +220,7 @@ FE UPECINO CODE >176:D:\CURSOS MECA\Ciclo_5\Microcontroladores\ptc_aut_PIC18F47Q
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 236 0 ABS 0 - -
+__Hspace_0 184 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 60000C 0 ABS 0 - -
@@ -229,7 +239,6 @@ __Hudata_bank10 0 0 ABS 0 udata_bank10 -
 __Hudata_bank11 0 0 ABS 0 udata_bank11 -
 __Hudata_bank12 0 0 ABS 0 udata_bank12 -
 __Hudata_bank14 0 0 ABS 0 udata_bank14 -
-__LUPECINO 0 0 ABS 0 UPECINO -
 isa$xinst 0 0 ABS 0 - build/default/debug/body.o
 __Hedata 0 0 ABS 0 edata -
 __Hudata 0 0 ABS 0 udata -
@@ -247,9 +256,9 @@ __Ludata_bank10 0 0 ABS 0 udata_bank10 -
 __Ludata_bank11 0 0 ABS 0 udata_bank11 -
 __Ludata_bank12 0 0 ABS 0 udata_bank12 -
 __Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Lbioloco 0 0 ABS 0 bioloco -
 __Lconfig 0 0 CONFIG 4 config -
 isa$std 1 0 ABS 0 - build/default/debug/body.o
-__HUPECINO 0 0 ABS 0 UPECINO -
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
@@ -265,6 +274,7 @@ __Ludata_bank7 0 0 ABS 0 udata_bank7 -
 __Ludata_bank8 0 0 ABS 0 udata_bank8 -
 __Ludata_bank9 0 0 ABS 0 udata_bank9 -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hbioloco 0 0 ABS 0 bioloco -
 __Hudata_acs 0 0 ABS 0 udata_acs -
 __Ludata_acs 0 0 ABS 0 udata_acs -
 # %SPLITSTAB Section

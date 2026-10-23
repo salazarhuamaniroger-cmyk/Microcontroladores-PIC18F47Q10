@@ -6,7 +6,7 @@ Linker command line:
   --edf=C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC18F-Q_DFP/1.30.487/xc8\pic\dat\20260311214434_en.msgs \
   -cs -h+dist/default/debug\LAB_02.X.debug.sym \
   --cmf=dist/default/debug\LAB_02.X.debug.cmf -z -Q18F47Q10 \
-  -oC:\Users\Lenovo\AppData\Local\Temp\xcAs97g.0\driver_tmp_3.o \
+  -oC:\Users\Lenovo\AppData\Local\Temp\xcAs50k.0\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/debug/LAB_02.X.debug.map -E1 -ACODE=00h-01FFFFh \
   -ACONST=00h-01FFFFh -ASMALLCONST=01000h-010FFhx240,011000h-0110FFhx240 \
@@ -31,11 +31,11 @@ Machine type is 18F47Q10
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/debug/body.o
                 config                           300000   300000        C        0       4
-                UPECINO                               0        0      236        0       0
+                bioloco                               0        0      184        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                UPECINO                               0        0      236         0
+                bioloco                               0        0      184         0
 
         CLASS   CONST          
 
@@ -113,13 +113,13 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           000236-000CFF              ACA
+        BIGRAM           000184-000CFF              B7C
                          000E00-000E1E               1F
         BIGSFR           000D00-000DFF              100
                          000E1F-000FFF              1E1
-        CODE             000236-01FFFF            1FDCA
+        CODE             000184-01FFFF            1FE7C
         COMRAM           000000-00005F               60
-        CONST            000236-01FFFF            1FDCA
+        CONST            000184-01FFFF            1FE7C
         EEDATA           310000-3103FF              400
         IDLOC            200000-2000FF              100
         MEDIUMCONST      001000-00FFFF             F000
@@ -133,10 +133,10 @@ UNUSED ADDRESS RANGES
 
                                   Symbol Table
 
-__HUPECINO      UPECINO      000000  __H__absolute__ __absolute__ 000000
+__H__absolute__ __absolute__ 000000  __Hbioloco      bioloco      000000
 __Hcode         code         000000  __Hconfig       config       30000C
 __Hdata         data         000000  __Hedata        edata        000000
-__Hspace_0      (abs)        000236  __Hspace_1      (abs)        000000
+__Hspace_0      (abs)        000184  __Hspace_1      (abs)        000000
 __Hspace_3      (abs)        000000  __Hspace_4      (abs)        60000C
 __Hudata        udata        000000  __Hudata_acs    udata_acs    000000
 __Hudata_bank0  udata_bank0  000000  __Hudata_bank1  udata_bank1  000000
@@ -146,7 +146,7 @@ __Hudata_bank2  udata_bank2  000000  __Hudata_bank3  udata_bank3  000000
 __Hudata_bank4  udata_bank4  000000  __Hudata_bank5  udata_bank5  000000
 __Hudata_bank6  udata_bank6  000000  __Hudata_bank7  udata_bank7  000000
 __Hudata_bank8  udata_bank8  000000  __Hudata_bank9  udata_bank9  000000
-__LUPECINO      UPECINO      000000  __L__absolute__ __absolute__ 000000
+__L__absolute__ __absolute__ 000000  __Lbioloco      bioloco      000000
 __Lcode         code         000000  __Lconfig       config       000000
 __Ldata         data         000000  __Ledata        edata        000000
 __Lspace_0      (abs)        000000  __Lspace_1      (abs)        000000
